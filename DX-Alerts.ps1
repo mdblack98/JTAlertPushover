@@ -34,7 +34,7 @@ $Callsign = “W9MDB2”
 $QRZStuff = “not working”
 if (Test-Path $QRZUtil -PathType leaf)
 {
-$oProcess = Start-Process -FilePath $QRZUtil -ArgumentList ‘$QRZLogin $QRZPassword $Callsign’ -PassThru -RedirectStandardOutput qrz.txt
+$oProcess = Start-Process -FilePath $QRZUtil -ArgumentList $QRZLogin, $QRZPassword, $Callsign -PassThru -RedirectStandardOutput qrz.txt
 $handle = $oProcess.Handle
 $oProcess.WaitForExit()
 $output = Get-Content qrz.txt
