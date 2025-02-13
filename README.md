@@ -11,7 +11,7 @@ Powershell script to route JTAlert notifications to pushover.net
 
 #5 Set up your account at https://pushover.net/ and install the app on your computer and/or phone.
 
-#6 Edit DX-alert-pushover.bat and update the account/passwd for pushover.net
+#6 Edit DX-Alerts.ps1 and update the token/user for pushover.net at the bottom of the script
 
 #7 Set JTAlert Miscellaneous Alerts/User Defined Alert Application Path to DX-alert-Pushover.bat location and click the Test button and you should see an alert on the app.
 
